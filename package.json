@@ -3,10 +3,13 @@
   "version": "1.0.0",
   "description": "",
   "main": "dist/server.js",
+  "engines": {
+    "node": "14.x",
+    "npm": "7.x"
+  },
   "scripts": {
     "prepare": "tsc",
-    "local": "tsc && node dist/server.js",
-    "test": "env TS_NODE_COMPILER_OPTIONS='{\"module\": \"commonjs\" }' nyc mocha --timeout 10000 -r ts-node/register './test/**/*.spec.ts'"
+    "local": "tsc && node dist/server.js"
   },
   "author": "Antonio Pantaleo",
   "license": "ISC",
