@@ -8,8 +8,8 @@
     "npm": "7.x"
   },
   "scripts": {
-    "prepare": "tsc",
-    "local": "tsc && node dist/server.js"
+    "postinstall": "tsc",
+    "run": "node dist/server.js"
   },
   "author": "Antonio Pantaleo",
   "license": "ISC",
