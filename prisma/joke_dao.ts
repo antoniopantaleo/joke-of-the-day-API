@@ -13,15 +13,3 @@ export async function getRandomJoke() : Promise<Joke> {
         throw new Error("No jokes found")
     }
 }
-
-// export async function insertJoke(joke: Joke) : Promise<void> {
-//     return new Promise(async (resolve, reject) => {
-//         const client = new PrismaClient()
-//         const res = await client.joke.create({
-//             data : joke
-//         })
-//         if (res) { resolve() } else {
-//             reject("Error during insert")
-//         }
-//     })
-// }
