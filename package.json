@@ -9,7 +9,7 @@
   },
   "scripts": {
     "postinstall": "tsc",
-    "run": "node dist/server.js"
+    "start": "node dist/server.js"
   },
   "author": "Antonio Pantaleo",
   "license": "ISC",
